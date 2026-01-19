@@ -174,14 +174,14 @@ nav{
     height: 560px;
 }
 .sec_2_border_and_number{
-    border: solid 5px;
-    /* background-color: aqua; */
+    /* border: solid 5px gray; */
+    background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 130px;
+    width: max-content;
+    height: max-content;
 }
 .sec_2_border_and_number h1{
     font-size: 25px;
