@@ -131,9 +131,7 @@ nav{
 /* sec_1 */
 
 /* sec_2 */
-.sec_2{
 
-}
 .About_Us {
     /* background-color: blueviolet; */
     width: 100%;
@@ -361,4 +359,26 @@ button svg {
     height: 100%;
     border-radius: 50%;
     color: white;
+}
+.idiv_maaag {
+    width: 100%;
+    height: 350px;
+    background-color: aquamarine;
+     position: relative;
+}
+.idiv_maaag img{
+    width: 100%;
+    height: 100%;
+     filter: brightness(50%);
+     position: relative;
+}
+.ar9am div{
+    position:absolute;
+    top: 99%;
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    justify-content: center;
+    background-color: aqua;
+    z-index: 9999999999999999;
 }
