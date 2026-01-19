@@ -174,14 +174,14 @@ nav{
     height: 560px;
 }
 .sec_2_border_and_number{
-    /* border: solid 5px gray; */
-    background-color: aqua;
+    border: solid 5px gray;
+    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: max-content;
-    height: max-content;
+    width:100%;
+    height: 140px;
 }
 .sec_2_border_and_number h1{
     font-size: 25px;
@@ -372,13 +372,26 @@ button svg {
      filter: brightness(50%);
      position: relative;
 }
-.ar9am div{
-    position:absolute;
-    top: 99%;
+.ar9am{
+ position: relative;
+    bottom: 200px;
     display: flex;
     flex-direction: row;
-    gap: 90px;
+    gap: 220px;
     justify-content: center;
-    background-color: aqua;
     z-index: 9999999999999999;
+    color: white;
+    font-size: 19px;
+    font-weight: bolder;
+}
+.ar9am p {
+   
+    font-size: 16px;
+    font-weight: 700;
+    color: floralwhite;
+}
+.ar9am h1{
+        font-size: 48px;
+    display: block;
+    font-weight: 700;
 }
