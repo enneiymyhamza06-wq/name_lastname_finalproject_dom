@@ -132,6 +132,7 @@ nav{
 
 /* sec_2 */
 .sec_2{
+
 }
 .About_Us {
     /* background-color: blueviolet; */
@@ -142,14 +143,17 @@ nav{
     align-items: center;
     justify-content: center;
 }
+
 .About_Us p {
     color: rgb(94, 93, 93);
 }
 .About_Us h1 {
-    font-size: 25px;
+    font-size: 45px;
+    font-family: 'Amatic SC', cursive;
 }
 .About_Us span {
     color: rgb(207, 19, 19);
+    font-family: 'Amatic SC', cursive;
 }
 .part_2{
     display: flex;
@@ -246,6 +250,8 @@ button svg {
     background-color: rgb(242, 242, 242);
     width: 100%;
     height:400px;
+    display: flex;
+    align-items: center;
 }
 .box_red{
     background-color: rgb(207, 19, 19);
@@ -288,7 +294,7 @@ button svg {
     justify-content: center;
 }
 .first_box_white{
-    background-color: rgb(32, 48, 62);
+    background-color: rgb(255, 255, 255);
    width: 250px;
     height:95%;
     padding: 20px;
@@ -297,9 +303,10 @@ button svg {
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    color: gray;
 }
 .second_box_white {
-    background-color: rgb(32, 48, 62);
+    background-color: rgb(255, 255, 255);
    width: 250px;
     height:95%;
     padding: 20px;
@@ -308,18 +315,22 @@ button svg {
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    color: gray;
 }
 .first_box_white h1{
     font-size: 19px;
+    color: black;
 }
 .second_box_white h1{
     font-size: 19px;
+    color: black;
 }
 .third_box_white h1{
     font-size: 19px;
+    color: black;
 }
 .third_box_white{
-    background-color: rgb(32, 48, 62);
+    background-color: rgb(255, 255, 255);
    width: 250px;
     height:95%;
     padding: 20px;
@@ -328,12 +339,13 @@ button svg {
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    color: gray;
 }
 .div_svg_2{
     display: flex;
 }
 .div_svg_2{
-    background-color: aliceblue;
+    background-color: rgb(252, 242, 242);
     width: 60px;
     height: 60px;
     display: flex;
@@ -341,4 +353,12 @@ button svg {
     justify-content: center;
     color: rgb(207, 19, 19);
     border-radius: 50%;
+}
+
+.div_svg_2 :hover{
+    background-color: rgb(207, 19, 19);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: white;
 }
