@@ -2,7 +2,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 nav{
      background-color: aliceblue;
@@ -572,6 +572,239 @@ button svg {
 /* sec_5 */
 .sec_5{
     width: 100%;
-    height: 500px;
+    height: 700px;
     background-color: rgb(242, 242, 242);
+}
+.sec_5_TESTIMONIALS{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sec_5_TESTIMONIALS h1{
+      font-family: 'Amatic SC', cursive;
+    font-size: 56px;
+}
+.sec_5_TESTIMONIALS span{
+  color: rgb(207, 19, 19);
+}
+.carousel{
+    width: 100%;
+    height: 500px;
+}
+.carousel_pt1{
+     width: 100%;
+    height: 500px;
+}
+
+.sec_5 .container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* carosil */
+
+
+
+.carousel_pt1{
+    /* background-color: bisque; */
+    width: 70%;
+    height: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.carousel_pt3{
+     width: 70%;
+    height: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.carousel_pt3 {
+    /* background-color: bisque; */
+    width: 70%;
+    height: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.ldakhl_carosil {
+    /* background-color: aqua; */
+    width: 80%;
+    height:max-content;
+    border-left: red solid;
+    padding-left: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.ldakhl_carosil3  {
+    /* background-color: aqua; */
+    width: 80%;
+    height:max-content;
+    border-left: red solid;
+    padding-left: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.ldakhl_carosil5{
+   width: 80%;
+    height:max-content;
+    border-left: red solid;
+    padding-left: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.ldakhl_carosil3 .kk {
+    color: rgb(224, 130, 130);
+    font-size: 24px;
+}
+.carousel_pt5{
+      width: 70%;
+    height: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.carousel_pt7{
+      width: 70%;
+    height: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.ldakhl_carosil7{
+       width: 80%;
+    height:max-content;
+    border-left: red solid;
+    padding-left: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/*  */
+.ldakhl_carosil .kk {
+    color: rgb(224, 130, 130);
+    font-size: 24px;
+}
+.carousel h1{
+        font-family: 'Amatic SC', cursive;
+}
+.carousel span{
+        font-family: 'Amatic SC', cursive;
+}
+#njom{
+    color: rgb(255, 193, 8);
+}
+/*  */
+.carousel .carousel_pt2 img{
+    width:100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.carousel .carousel_pt2 {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .carousel_pt4 img{
+    width:100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.carousel .carousel_pt4 {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .carousel_pt6 img{
+    width:100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.carousel .carousel_pt6 {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .carousel_pt8 img{
+    width:100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.carousel .carousel_pt8 {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*  */
+
+.aaa{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: chocolate;
+}
+.bb{
+      width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: darkcyan;
+}
+
+.cc{
+      width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: floralwhite;
+}
+.dd{
+      width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}
+.sec_6{
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 400px;
+}
+/* boton */
+
+.botonat{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
 }
