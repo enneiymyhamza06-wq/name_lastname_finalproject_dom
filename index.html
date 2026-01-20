@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./public/css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net">
@@ -30,7 +30,14 @@
                 <a href="">Events</a>
                 <a href="">Chefs</a>
                 <a href="">Gallery</a>
-                <a href="">Dropdown</a>
+
+                    <a href="" id="dropBtn">Dropdown<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </a>
+                    
                 <a href="">Contact</a>
             </div>
             <div class="nav_botton">
@@ -179,11 +186,15 @@
 
                 </div>
                 <div class="first_box_white">
-                    <div class="div_svg_2"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="36" fill="currentColor" class="bi bi-clipboard2-data" viewBox="0 0 16 16">
-  <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z"/>
-  <path d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z"/>
-  <path d="M10 7a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1"/>
-</svg></div>
+                    <div class="div_svg_2"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="36"
+                            fill="currentColor" class="bi bi-clipboard2-data" viewBox="0 0 16 16">
+                            <path
+                                d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z" />
+                            <path
+                                d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z" />
+                            <path
+                                d="M10 7a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1" />
+                        </svg></div>
                     <div>
                         <h1>Ullamco laboris ladore lore pan</h1>
                         <p>Excepteur sint occaecat cupidatat non proident,
@@ -206,10 +217,12 @@
                 </div>
                 <div class="third_box_white">
 
-                    <div class="div_svg_2"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="36" fill="currentColor" class="bi bi-inboxes" viewBox="0 0 16 16">
-  <path d="M4.98 1a.5.5 0 0 0-.39.188L1.54 5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0A.5.5 0 0 1 10 5h4.46l-3.05-3.812A.5.5 0 0 0 11.02 1zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562A.5.5 0 0 0 1.884 9h12.234a.5.5 0 0 0 .496-.438zM3.809.563A1.5 1.5 0 0 1 4.981 0h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 10H1.883A1.5 1.5 0 0 1 .394 8.686l-.39-3.124a.5.5 0 0 1 .106-.374zM.125 11.17A.5.5 0 0 1 .5 11H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124A1.5 1.5 0 0 1 14.117 16H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393zm.941.83.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438l.32-2.562H10.45a2.5 2.5 0 0 1-4.9 0z"/>
-</svg>
-</div>
+                    <div class="div_svg_2"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="36"
+                            fill="currentColor" class="bi bi-inboxes" viewBox="0 0 16 16">
+                            <path
+                                d="M4.98 1a.5.5 0 0 0-.39.188L1.54 5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0A.5.5 0 0 1 10 5h4.46l-3.05-3.812A.5.5 0 0 0 11.02 1zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562A.5.5 0 0 0 1.884 9h12.234a.5.5 0 0 0 .496-.438zM3.809.563A1.5 1.5 0 0 1 4.981 0h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 10H1.883A1.5 1.5 0 0 1 .394 8.686l-.39-3.124a.5.5 0 0 1 .106-.374zM.125 11.17A.5.5 0 0 1 .5 11H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124A1.5 1.5 0 0 1 14.117 16H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393zm.941.83.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438l.32-2.562H10.45a2.5 2.5 0 0 1-4.9 0z" />
+                        </svg>
+                    </div>
                     <div>
                         <h1>Ullamco laboris ladore lore pan</h1>
                         <p>Excepteur sint occaecat cupidatat non proident,
@@ -238,386 +251,414 @@
                 </div>
                 <div>
                     <h1>32</h1>
-                   <p>Workers</p>
+                    <p>Workers</p>
                 </div>
             </div>
         </section>
         <!-- sec_4 -->
-         <!-- Our_Menu -->
+        <!-- Our_Menu -->
         <section class="sec_4">
             <section class="container">
-                 <div class="Our_Menu">
-                <p>Our Menu</p>
-                <h1>Check Our <span>Yummy Menu</span></h1>
-            </div>
-            <div class="link_sec_4">
-                <a href="">Starters</a>
-                <a href="">Breakfast</a>
-                <a href="">Lunch</a>
-                <a href="">Dinner</a>
-            </div>
-            <div class="Menu_Dinner">
-                <p>Menu</p>
-                <h1>Dinner</h1>
-            </div>
-            <div class="Menu_links">
-                <div class="pt1_Menu_links">
-                    <div class="img_1">
-                        <img src="./public/images_yummy/menu/menu-item-1.png" alt="">
-                        <h1>Magnam Tiste</h1>
-                        <p>Lorem, deren, trataro, filede, nerada</p>
-                        <span>$5.95</span>
-                    </div>
-                    <div class="img_2">
-                        <img src="./public/images_yummy/menu/menu-item-2.png" alt="">
-                        <h1>Magnam Tiste</h1>
-                        <p>Lorem, deren, trataro, filede, nerada</p>
-                        <span>$5.95</span>
-                    </div>
-                    <div class="img_3">
-                        <img src="./public/images_yummy/menu/menu-item-3.png" alt="">
-                        <h1>Magnam Tiste</h1>
-                        <p>Lorem, deren, trataro, filede, nerada</p>
-                        <span>$5.95</span>
-                    </div>
+                <div class="Our_Menu">
+                    <p>Our Menu</p>
+                    <h1>Check Our <span>Yummy Menu</span></h1>
                 </div>
-                <div class="pt2_Menu_links">
-                    <div class="img_4">
-                        <img src="./public/images_yummy/menu/menu-item-4.png" alt="">
-                        <h1>Magnam Tiste</h1>
-                        <p>Lorem, deren, trataro, filede, nerada</p>
-                        <span>$5.95</span>
-                    </div>
-                    <div class="img_5">
-                        <img src="./public/images_yummy/menu/menu-item-5.png" alt="">
-                        <h1>Magnam Tiste</h1>
-                        <p>Lorem, deren, trataro, filede, nerada</p>
-                        <span>$5.95</span>
-                    </div>
-                    <div class="img_6">
-                        <img src="./public/images_yummy/menu/menu-item-6.png" alt="">
-                        <h1>Magnam Tiste</h1>
-                        <p>Lorem, deren, trataro, filede, nerada</p>
-                        <span>$5.95</span>
-                    </div>
+                <div class="link_sec_4">
+                    <a href="">Starters</a>
+                    <a href="">Breakfast</a>
+                    <a href="">Lunch</a>
+                    <a href="">Dinner</a>
                 </div>
+                <div class="Menu_Dinner">
+                    <p>Menu</p>
+                    <h1>Dinner</h1>
+                </div>
+                <div class="Menu_links">
+                    <div class="pt1_Menu_links">
+                        <div class="img_1">
+                            <img src="./public/images_yummy/menu/menu-item-1.png" alt="">
+                            <h1>Magnam Tiste</h1>
+                            <p>Lorem, deren, trataro, filede, nerada</p>
+                            <span>$5.95</span>
+                        </div>
+                        <div class="img_2">
+                            <img src="./public/images_yummy/menu/menu-item-2.png" alt="">
+                            <h1>Magnam Tiste</h1>
+                            <p>Lorem, deren, trataro, filede, nerada</p>
+                            <span>$5.95</span>
+                        </div>
+                        <div class="img_3">
+                            <img src="./public/images_yummy/menu/menu-item-3.png" alt="">
+                            <h1>Magnam Tiste</h1>
+                            <p>Lorem, deren, trataro, filede, nerada</p>
+                            <span>$5.95</span>
+                        </div>
+                    </div>
+                    <div class="pt2_Menu_links">
+                        <div class="img_4">
+                            <img src="./public/images_yummy/menu/menu-item-4.png" alt="">
+                            <h1>Magnam Tiste</h1>
+                            <p>Lorem, deren, trataro, filede, nerada</p>
+                            <span>$5.95</span>
+                        </div>
+                        <div class="img_5">
+                            <img src="./public/images_yummy/menu/menu-item-5.png" alt="">
+                            <h1>Magnam Tiste</h1>
+                            <p>Lorem, deren, trataro, filede, nerada</p>
+                            <span>$5.95</span>
+                        </div>
+                        <div class="img_6">
+                            <img src="./public/images_yummy/menu/menu-item-6.png" alt="">
+                            <h1>Magnam Tiste</h1>
+                            <p>Lorem, deren, trataro, filede, nerada</p>
+                            <span>$5.95</span>
+                        </div>
+                    </div>
 
-            </div>
+                </div>
             </section>
-           
+
         </section>
         <!-- Our Menu -->
-         <section class="sec_5">
+        <section class="sec_5">
             <div class="container">
                 <div class="sec_5_TESTIMONIALS">
                     <p>TESTIMONIALS</p>
                     <h1>What Are They <span>Saying About Us</span> </h1>
                 </div>
                 <!--carousil-->
-               <div class="carousel">
-    <!-- Part 1 -->
-     <div class="botonat">
-    <button class="prev">prev</button>
-      <button class="next">next</button>
-     </div>
-     
-    <div class="aaa">
-        <div class="carousel_pt1">
-            <div class="ldakhl_carosil">
-                <p><i class="fa-solid fa-quote-left kk"></i> <i>Proin iaculis purus consequat sem cure digni ssim donec 
-                    porttitora entum suscipit rhoncus. Accusantium quam,
-                    ultricies eget id, aliquam eget nibh et. </i>
-                    Maecen aliquam, risus at semper. 99<i class="fa-solid fa-quote-right kk"></i></p>
-                <h1>SAUL GOODMAN</h1>
-                <span>CID & FOUNDET</span>
-                <div class="star-rating" id="njom">
-                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                <div class="botoona">
+                     <button class="prev">prev</button>
+                   <button class="next">next</button>
                 </div>
-            </div>
-        </div>
-        <div class="carousel_pt2">
-            <img src="./public/images_yummy/testimonials/testimonials-1.jpg" alt="Testimonial 1">
-        </div>
-    </div>
+                <div class="botona_li_ltaht">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+                
+                <div class="carousel">
+                    <div class="aaa">
+                        <div class="carousel_pt1">
+                            <div class="ldakhl_carosil">
+                                <p><i class="fa-solid fa-quote-left kk"></i> <i>Proin iaculis purus consequat sem cure
+                                        digni ssim donec
+                                        porttitora entum suscipit rhoncus. Accusantium quam,
+                                        ultricies eget id, aliquam eget nibh et. </i>
+                                    Maecen aliquam, risus at semper. 99<i class="fa-solid fa-quote-right kk"></i></p>
+                                <h1>SAUL GOODMAN</h1>
+                                <span>CID & FOUNDET</span>
+                                <div class="star-rating" id="njom">
+                                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel_pt2">
+                            <img src="./public/images_yummy/testimonials/testimonials-1.jpg" alt="Testimonial 1">
+                        </div>
+                    </div>
 
-    <!-- Part 2 -->
-    <div class="bb">
-        <div class="carousel_pt3">
-            <div class="ldakhl_carosil3">
-                <p><i class="fa-solid fa-quote-left kk"></i> <i>Proin iaculis purus consequat sem cure digni ssim donec 
-                    porttitora entum suscipit rhoncus. Accusantium quam,
-                    ultricies eget id, aliquam eget nibh et. </i>
-                    Maecen aliquam, risus at semper. 99<i class="fa-solid fa-quote-right kk"></i></p>
-                <h1>SAUL GOODMAN</h1>
-                <span>CID & FOUNDET</span>
-                <div class="star-rating" id="njom">
-                    &#9733;&#9733;&#9733;&#9733;&#9733;
-                </div>
-            </div>
-        </div>
-        <div class="carousel_pt4">
-            <img src="./public/images_yummy/testimonials/testimonials-2.jpg" alt="Testimonial 2">
-        </div>
-    </div>
+                    <!-- Part 2 -->
+                    <div class="bb">
+                        <div class="carousel_pt3">
+                            <div class="ldakhl_carosil3">
+                                <p><i class="fa-solid fa-quote-left kk"></i> <i>Proin iaculis purus consequat sem cure
+                                        digni ssim donec
+                                        porttitora entum suscipit rhoncus. Accusantium quam,
+                                        ultricies eget id, aliquam eget nibh et. </i>
+                                    Maecen aliquam, risus at semper. 99<i class="fa-solid fa-quote-right kk"></i></p>
+                                <h1>SAUL GOODMAN</h1>
+                                <span>CID & FOUNDET</span>
+                                <div class="star-rating" id="njom">
+                                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel_pt4">
+                            <img src="./public/images_yummy/testimonials/testimonials-2.jpg" alt="Testimonial 2">
+                        </div>
+                    </div>
 
-    <!-- Part 3 -->
-    <div class="cc">
-        <div class="carousel_pt5">
-            <div class="ldakhl_carosil5">
-                <p><i class="fa-solid fa-quote-left kk"></i> <i>Proin iaculis purus consequat sem cure digni ssim donec 
-                    porttitora entum suscipit rhoncus. Accusantium quam,
-                    ultricies eget id, aliquam eget nibh et. </i>
-                    Maecen aliquam, risus at semper. 99<i class="fa-solid fa-quote-right kk"></i></p>
-                <h1>SAUL GOODMAN</h1>
-                <span>CID & FOUNDET</span>
-                <div class="star-rating" id="njom">
-                    &#9733;&#9733;&#9733;&#9733;&#9733;
-                </div>
-            </div>
-        </div>
-        <div class="carousel_pt6">
-            <img src="./public/images_yummy/testimonials/testimonials-3.jpg" alt="Testimonial 3">
-        </div>
-    </div>
+                    <!-- Part 3 -->
+                    <div class="cc">
+                        <div class="carousel_pt5">
+                            <div class="ldakhl_carosil5">
+                                <p><i class="fa-solid fa-quote-left kk"></i> <i>Proin iaculis purus consequat sem cure
+                                        digni ssim donec
+                                        porttitora entum suscipit rhoncus. Accusantium quam,
+                                        ultricies eget id, aliquam eget nibh et. </i>
+                                    Maecen aliquam, risus at semper. 99<i class="fa-solid fa-quote-right kk"></i></p>
+                                <h1>SAUL GOODMAN</h1>
+                                <span>CID & FOUNDET</span>
+                                <div class="star-rating" id="njom">
+                                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel_pt6">
+                            <img src="./public/images_yummy/testimonials/testimonials-3.jpg" alt="Testimonial 3">
+                        </div>
+                    </div>
 
-    <!-- Part 4 -->
-    <div class="dd">
-        <div class="carousel_pt7">
-            <div class="ldakhl_carosil7">
-                <p><i class="fa-solid fa-quote-left kk"></i> <i>Proin iaculis purus consequat sem cure digni ssim donec 
-                    porttitora entum suscipit rhoncus. Accusantium quam,
-                    ultricies eget id, aliquam eget nibh et. </i>
-                    Maecen aliquam, risus at semper. 99<i class="fa-solid fa-quote-right kk"></i></p>
-                <h1>SAUL GOODMAN</h1>
-                <span>CID & FOUNDET</span>
-                <div class="star-rating" id="njom">
-                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                    <!-- Part 4 -->
+                    <div class="dd">
+                        <div class="carousel_pt7">
+                            <div class="ldakhl_carosil7">
+                                <p><i class="fa-solid fa-quote-left kk"></i> <i>Proin iaculis purus consequat sem cure
+                                        digni ssim donec
+                                        porttitora entum suscipit rhoncus. Accusantium quam,
+                                        ultricies eget id, aliquam eget nibh et. </i>
+                                    Maecen aliquam, risus at semper. 99<i class="fa-solid fa-quote-right kk"></i></p>
+                                <h1>SAUL GOODMAN</h1>
+                                <span>CID & FOUNDET</span>
+                                <div class="star-rating" id="njom">
+                                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel_pt8">
+                            <img src="./public/images_yummy/testimonials/testimonials-4.jpg" alt="Testimonial 4">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="carousel_pt8">
-            <img src="./public/images_yummy/testimonials/testimonials-4.jpg" alt="Testimonial 4">
-        </div>
-    </div>
-</div>
-   
+
                 <!-- ?carousil -->
             </div>
-         </section>
-         <section class="sec_6">
-
-         </section>
-         <!--sec_7  -->
-         <!-- chefs -->
-         <section class="sec_7">
-            <div class="container">
-                 <div class="chefs_title">
-                <p>chefs</p>
-                <h1>Our <span> Proffesional Chefs</span></h1>
+        </section>
+        <section class="sec_6">
+            <div>
+                
             </div>
-            <div class="le_chafs">
-                <div class="chaf1">
-                    <img src="./public/images_yummy/chefs/chefs-1.jpg" alt="">
-                    <h1>Walter White</h1>
-                    <p>Master Chef</p>
-                    <span>Velit aut quia fugit et et. 
-                        Dolorum ea voluptate vel tempore tenetur 
-                        ipsa quae aut. Ipsum exercitationem 
-                        iure minima enim corporis et voluptate.</span>
+        </section>
+        <!--sec_7  -->
+        <!-- chefs -->
+        <section class="sec_7">
+            <div class="container">
+                <div class="chefs_title">
+                    <p>chefs</p>
+                    <h1>Our <span> Proffesional Chefs</span></h1>
+                </div>
+                <div class="le_chafs">
+                    <div class="chaf1">
+                        <img src="./public/images_yummy/chefs/chefs-1.jpg" alt="">
+                        <h1>Walter White</h1>
+                        <p>Master Chef</p>
+                        <span>Velit aut quia fugit et et.
+                            Dolorum ea voluptate vel tempore tenetur
+                            ipsa quae aut. Ipsum exercitationem
+                            iure minima enim corporis et voluptate.</span>
                         <div class="icoons">
                             <i class="fa-brands fa-x-twitter"></i>
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
                             <i class="fa-brands fa-linkedin"></i>
                         </div>
-                    <img id="svg" src="./public/images_yummy/team-shape.svg"  class="chaf1_shape">
-                </div>
-                <div class="chaf2">
-                  <img src="./public/images_yummy/chefs/chefs-2.jpg" alt="">
-                  <h1>Sarah Jhonson</h1>
-                  <p>Patissier</p>
-                  <span>Quo esse repellendus quia id. Est eum et
-                     accusantium pariatur fugit nihil minima suscipit 
-                     corporis. 
-                    Voluptate sed quas reiciendis animi neque sapiente
-                    .</span>
-                      <div class="icoons">
+                        <img id="svg" src="./public/images_yummy/team-shape.svg" class="chaf1_shape">
+                    </div>
+                    <div class="chaf2">
+                        <img src="./public/images_yummy/chefs/chefs-2.jpg" alt="">
+                        <h1>Sarah Jhonson</h1>
+                        <p>Patissier</p>
+                        <span>Quo esse repellendus quia id. Est eum et
+                            accusantium pariatur fugit nihil minima suscipit
+                            corporis.
+                            Voluptate sed quas reiciendis animi neque sapiente
+                            .</span>
+                        <div class="icoons">
                             <i class="fa-brands fa-x-twitter"></i>
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
                             <i class="fa-brands fa-linkedin"></i>
                         </div>
-                                        <img id="svg" src="./public/images_yummy/team-shape.svg"  class="chaf1_shape">
+                        <img id="svg" src="./public/images_yummy/team-shape.svg" class="chaf1_shape">
 
-                </div>
-                <div class="chaf3">
-                  <img src="./public/images_yummy/chefs/chefs-3.jpg" alt="">
-                    <h1>William Anderson</h1>
-                    <p>Cook</p>
-                    <span>Vero omnis enim consequatur.
-                         Voluptas consectetur unde qui molestiae deserunt. 
-                         Voluptates
-                         enim aut architecto porro aspernatur molestiae 
-                         modi.</span>
-                           <div class="icoons">
+                    </div>
+                    <div class="chaf3">
+                        <img src="./public/images_yummy/chefs/chefs-3.jpg" alt="">
+                        <h1>William Anderson</h1>
+                        <p>Cook</p>
+                        <span>Vero omnis enim consequatur.
+                            Voluptas consectetur unde qui molestiae deserunt.
+                            Voluptates
+                            enim aut architecto porro aspernatur molestiae
+                            modi.</span>
+                        <div class="icoons">
                             <i class="fa-brands fa-x-twitter"></i>
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
                             <i class="fa-brands fa-linkedin"></i>
                         </div>
-                        <img id="svg" src="./public/images_yummy/team-shape.svg"  class="chaf1_shape">
+                        <img id="svg" src="./public/images_yummy/team-shape.svg" class="chaf1_shape">
+                    </div>
                 </div>
             </div>
-            </div>
-         </section>
+        </section>
 
-         <section class="sec_8" >
+        <section class="sec_8">
             <div class="Book_A_Table_sec_8">
                 <p>Book A Table</p>
-            <h1>Book Your <span> Stay With Us</span></h1> 
+                <h1>Book Your <span> Stay With Us</span></h1>
             </div>
             <section class="section-6">
                 <section class="container">
-                    
-                </section>
-        <div class="buttom-section-4">
-            <div class="left-buttom-section-4">
-                <img src="./public/images_yummy/reservation.jpg" alt="">
-            </div>
-            <div class="right-buttom-section-4">
-                <div>
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
-                    <input type="text" placeholder="Your phone">
-                </div>
-                <div>
-                    <input type="date">
-                    <input type="time">
-                    <input type="number" placeholder="# of peaple">
-                </div>
-                <textarea name="" id="" placeholder="Message"></textarea>
-                <div class="button-section4">
-                    <button>Book a table</button>
-                </div>
-            </div>-
-        </div>
-    </section>
-         </section>
 
-         <section class="sec_9">
+                </section>
+                <div class="buttom-section-4">
+                    <div class="left-buttom-section-4">
+                        <img src="./public/images_yummy/reservation.jpg" alt="">
+                    </div>
+                    <div class="right-buttom-section-4">
+                        <div>
+                            <input type="text" placeholder="Your Name">
+                            <input type="email" placeholder="Your Email">
+                            <input type="text" placeholder="Your phone">
+                        </div>
+                        <div>
+                            <input type="date">
+                            <input type="time">
+                            <input type="number" placeholder="# of peaple">
+                        </div>
+                        <textarea name="" id="" placeholder="Message"></textarea>
+                        <div class="button-section4">
+                            <button>Book a table</button>
+                        </div>
+                    </div>-
+                </div>
+            </section>
+        </section>
+
+        <section class="sec_9">
             <div class="sec_9_galery">
-                 <p>Gallery</p>
-            <h1>Check <span>Our Gallery</span></h1>
+                <p>Gallery</p>
+                <h1>Check <span>Our Gallery</span></h1>
             </div>
-           
-         </section>
-         <!-- sec_10 -->
-          <!-- contact -->
-       <section class="sec_10">
-    <div class="contact">
-        <p>Contact</p>
-        <h1>Need Help? <span>Contact Us</span></h1>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 mb-4">
-                <div class="mappps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.44!2d-73.98645!3d40.749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a4b9149d89%3A0x2b8d0a4f4f4f4f4f!2sA108%20Adam%20Street%2C%20New%20York%2C%20NY%20535022!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+        <!-- sec_10 -->
+        <!-- contact -->
+        <section class="sec_10">
+            <div class="contact">
+                <p>Contact</p>
+                <h1>Need Help? <span>Contact Us</span></h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <div class="mappps">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.44!2d-73.98645!3d40.749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a4b9149d89%3A0x2b8d0a4f4f4f4f4f!2sA108%20Adam%20Street%2C%20New%20York%2C%20NY%20535022!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus"
+                                width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="address_call row g-0 h-100">
+                            <div class="col-md-6 sss1">
+                                <div class="svgg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                </div>
+                                <div class="parag_svg1">
+                                    <h3>Address</h3>
+                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 sss2">
+                                <div class="svgg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="36" height="36"
+                                        fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                    </svg>
+                                </div>
+                                <div class="parag_svg1">
+                                    <h3>Call Us</h3>
+                                    <p>+1 5589 55488</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 sss3">
+                                <div class="svgg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                        class="bi bi-envelope" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 8H2a2 2 0 0 1-2-8V4m2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1z" />
+                                        <path
+                                            d="M4.98 3.5a.495.495 0 0 0-.49 0A1.49 1.49 0 0 0 3 4.5V6l3.5 2 3.5-2V4.5a1.5 1.5 0 0 0-1.49-1.5zM14 4.5V6l-3.73 2.14A.5.5 0 0 0 10 8.5v3.6a.5.5 0 0 0 .558.499l2.18-.823a3.498 3.498 0 0 0 1.264-.59l.28-.134a1.49 1.49 0 0 0 .581-1.269v-4.02z" />
+                                    </svg>
+                                </div>
+                                <div class="parag_svg3">
+                                    <h3>Email Us</h3>
+                                    <p>info@example.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 sss4">
+                                <div class="svgg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                        class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V7H3.5a.5.5 0 0 1 0-1H7V3.5z" />
+                                        <path d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16" />
+                                    </svg>
+                                </div>
+                                <div class="parag_svg1">
+                                    <h3>Opening Hours</h3>
+                                    <p>Mon-Sat 10:00 - 22:00<br>Sunday Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="address_call row g-0 h-100">
-                    <div class="col-md-6 sss1">
-                        <div class="svgg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                            </svg>
-                        </div> 
-                        <div class="parag_svg1">
-                            <h3>Address</h3>
-                            <p>A108 Adam Street, New York, NY 535022</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 sss2">
-                        <div class="svgg">
-                            <svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="36" height="36" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-</svg>
-                        </div>
-                        <div class="parag_svg1">
-                            <h3>Call Us</h3>
-                            <p>+1 5589 55488</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 sss3">
-                        <div class="svgg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-envelope" viewBox="0 0 16 16">
-                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 8H2a2 2 0 0 1-2-8V4m2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1z"/>
-                                <path d="M4.98 3.5a.495.495 0 0 0-.49 0A1.49 1.49 0 0 0 3 4.5V6l3.5 2 3.5-2V4.5a1.5 1.5 0 0 0-1.49-1.5zM14 4.5V6l-3.73 2.14A.5.5 0 0 0 10 8.5v3.6a.5.5 0 0 0 .558.499l2.18-.823a3.498 3.498 0 0 0 1.264-.59l.28-.134a1.49 1.49 0 0 0 .581-1.269v-4.02z"/>
-                            </svg>
-                        </div>
-                        <div class="parag_svg3">
-                            <h3>Email Us</h3>
-                            <p>info@example.com</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 sss4">
-                        <div class="svgg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-clock" viewBox="0 0 16 16">
-                                <path d="M8 3.5a.5.5 0 0 0-1 0V7H3.5a.5.5 0 0 1 0-1H7V3.5z"/>
-                                <path d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
-                            </svg>
-                        </div>
-                        <div class="parag_svg1">
-                            <h3>Opening Hours</h3>
-                            <p>Mon-Sat 10:00 - 22:00<br>Sunday Closed</p>
-                        </div>
-                    </div>
-                </div>
+        </section>
+        <!-- sec_11 -->
+        <div class="contact-form">
+
+            <div class="form-row">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
             </div>
+            <div class="form-row">
+                <input type="text" placeholder="Subject" required>
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-full">
+                <textarea placeholder="Message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
         </div>
-    </div>
-</section>
-<!-- sec_11 -->
-<div class="contact-form">
-   
-        <div class="form-row">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-row">
-            <input type="text" placeholder="Subject" required>
-            <input type="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-full">
-            <textarea placeholder="Message" rows="5" required></textarea>
-        </div>
-        <button type="submit">Send Message</button>
-</div>
 
 
     </main>
-  <footer class="footer">
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-column">
                 <div class="footer-title">
-                    <svg style="color: red;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-</svg>
-                    <span>Address</span></div>
+                    <svg style="color: red;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path
+                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                    </svg>
+                    <span>Address</span>
+                </div>
                 <div class="footer-item">
                     <div class="address-text">A108 Adam Street<br>NY 535022</div>
                 </div>
             </div>
             <div class="footer-column">
-                
+
                 <div class="footer-title">
-                    <svg style="color: red;"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-</svg>
-                   <span>Contact</span> </div>
+                    <svg style="color: red;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                    </svg>
+                    <span>Contact</span>
+                </div>
                 <div class="footer-item">
                     <div class="phone">Phone: +1 5589 55488 55</div>
                 </div>
@@ -627,16 +668,18 @@
             </div>
             <div class="footer-column">
                 <div class="footer-title">
-                    <svg style="color: red;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
-  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
-  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
-</svg>
-                    <span>Opening Hours</span></div>
-                <div class="footer-item">                
-                    <span ><span style="font-weight: 900;">Mon - Sat:</span> 9AM - 10PM</span>
+                    <svg style="color: red;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                    </svg>
+                    <span>Opening Hours</span>
                 </div>
                 <div class="footer-item">
-                   
+                    <span><span style="font-weight: 900;">Mon - Sat:</span> 9AM - 10PM</span>
+                </div>
+                <div class="footer-item">
+
                     <span class="hours-sub"> <span style="font-weight: 900;">Sunday</span> :Closed</span>
                 </div>
             </div>
@@ -644,25 +687,33 @@
                 <div class="footer-title">Follow Us</div>
                 <div class="social-icons">
                     <a href="" class="social-icon" aria-label="Facebook">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-</svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
                     </a>
                     <a href="" class="social-icon" aria-label="Twitter">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-</svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
                     </a>
-  
+
                     <a href="" class="social-icon" aria-label="Twitter">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-</svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
                     </a>
                     <a href="" class="social-icon" aria-label="Instagram">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-</svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
                     </a>
                 </div>
             </div>

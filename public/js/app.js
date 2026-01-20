@@ -1,31 +1,31 @@
-// let carosil1 = document.querySelector('.aaa');
-// let carosil2 = document.querySelector('.bb');
-// let carosil3 = document.querySelector('.cc');
-// let carosil4 = document.querySelector('.dd');
-// let prev = document.querySelector('.prev'); 
-// let next = document.querySelector('.next');
-// let carousel = document.querySelector('.carousel'); 
+let carosil1 = document.querySelector('.aaa');
+let carosil2 = document.querySelector('.bb');
+let carosil3 = document.querySelector('.cc');
+let carosil4 = document.querySelector('.dd');
+let prev = document.querySelector('.prev'); 
+let next = document.querySelector('.next');
+let carousel = document.querySelector('.carousel'); 
 
-// let index = 0;
-// let slides = document.querySelectorAll('.carousel > div'); 
-// let width = slides[0].clientWidth + 20; 
-// console.log('Width:', width);
+let index = 0;
+let slides = document.querySelectorAll('.carousel > div'); 
+let width = slides[0].clientWidth ; 
+console.log('Width:', width);
 
-// next.addEventListener('click', () => {
-//     index++;
-//     if (index === slides.length - 1) index = 0; 
-//     carousel.style.transform = `translateX(${-index * width}px)`;  
-// });
+next.addEventListener('click', () => {
+    index++;
+    if (index === slides.length - 1) index = 0; 
+    carousel.style.transform = `translateX(${-index * width}px)`;  
+});
 
-// prev.addEventListener('click', () => {
-//     index--;
-//     if (index < 0) index = slides.length - 1;  
-//     carousel.style.transform = `translateX(${-index * width}px)`;
-// });
-// setInterval(() => {
-//     index = (index + 1) % slides.length;
-//     carousel.style.transform = `translateX(${-index * width}px)`;
-// }, 4000);
+prev.addEventListener('click', () => {
+    index--;
+    if (index < 0) index = slides.length - 1;  
+    carousel.style.transform = `translateX(${-index * width}px)`;
+});
+setInterval(() => {
+    index = (index + 1) % slides.length;
+    carousel.style.transform = `translateX(${-index * width}px)`;
+}, 4000);
 
 // =================================================
 // chaf
@@ -33,8 +33,25 @@
 let chafs = document.querySelectorAll('.le_chafs');  
 let chaf1 = document.querySelector('.chaf1'); 
 let chaf2 = document.querySelector('.chaf2');
-let chaf3 = document.querySelector('.chaf3');  
+let chaf3 = document.querySelector('.chaf3');
+
 let icoons = document.querySelector('.icoons'); 
+// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+// const dropBtn = document.getElementById("dropBtn");
+// const dropMenu = document.querySelector(".dropdown-menu");
+
+// dropBtn.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   dropMenu.classList.toggle("show");
+// });
+
+// document.addEventListener("click", (e) => {
+//   if (!e.target.closest(".dropdown")) {
+//     dropMenu.classList.remove("show");
+//   }
+// });
+
+// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 chaf1.addEventListener('mouseover', () => {
     icoons.style.right = "0";
