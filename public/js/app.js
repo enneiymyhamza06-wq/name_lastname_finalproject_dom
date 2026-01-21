@@ -1,130 +1,160 @@
-let carosil1 = document.querySelector('.aaa');
-let carosil2 = document.querySelector('.bb');
-let carosil3 = document.querySelector('.cc');
-let carosil4 = document.querySelector('.dd');
-let prev = document.querySelector('.prev'); 
-let next = document.querySelector('.next');
-let carousel = document.querySelector('.carousel'); 
-let Watch_Video = document.querySelector('.Watch_Video')
-let modaal  = document.querySelector('#videoModal')
-let closeModal = document.querySelector('#closeModal')
-let button = document.querySelector('.button')
-// [[[[[[[[[[[[]]]]]]]]]]]]
+// =========================================
+//  MODAL CAROUSEL (#videoModal)
+// =========================================
+const modaal = document.querySelector('#videoModal');
+const closeModal = document.getElementById('closeModal');
+const Watch_Video = document.querySelector('.Watch_Video');
+const button = document.querySelector('.button');
 
-modaal.style.display = "none"
-Watch_Video.addEventListener('click',(e)=>{
-     e.preventDefault()
-    modaal.style.display = "block"
-})
-closeModal.addEventListener('click',()=> {
-    modaal.style.display = "none"
-})
-// xxxxxxxxxxxxxxxxx
-button.addEventListener('click',(e)=>{
-     e.preventDefault()
-    modaal.style.display = "block"
-})
-closeModal.addEventListener('click',()=> {
-    modaal.style.display = "none"
-})
+modaal.style.display = 'none';
 
-
-
-// [[[[[[[[[[[[]]]]]]]]]]]]
-let index = 0;
-let slides = document.querySelectorAll('.carousel > div'); 
-let width = slides[0].clientWidth ; 
-console.log('Width:', width);
-
-next.addEventListener('click', () => {
-    index++;
-    if (index === slides.length - 1) index = 0; 
-    carousel.style.transform = `translateX(${-index * width}px)`;  
+[Watch_Video, button].forEach(btn => {
+    btn?.addEventListener('click', (e) => {
+        e.preventDefault();
+        modaal.style.display = 'block';
+    });
 });
 
-prev.addEventListener('click', () => {
-    index--;
-    if (index < 0) index = slides.length - 1;  
-    carousel.style.transform = `translateX(${-index * width}px)`;
+closeModal.addEventListener('click', () => modaal.style.display = 'none');
+
+// Modal carousel
+let modalIndex = 0;
+const modalTrack = document.getElementById('track');
+const modalSlides = document.querySelectorAll('.slide');
+const modalPrev = document.getElementById('prevBtn');
+const modalNext = document.getElementById('nextBtn');
+
+function moveModal() {
+    modalTrack.style.transform = `translateX(-${modalIndex * 100}%)`;
+}
+
+modalNext.addEventListener('click', () => {
+    modalIndex = modalIndex >= modalSlides.length - 1 ? 0 : modalIndex + 1;
+    moveModal();
 });
+
+modalPrev.addEventListener('click', () => {
+    modalIndex = modalIndex <= 0 ? modalSlides.length - 1 : modalIndex - 1;
+    moveModal();
+});
+
+// Auto modal
 setInterval(() => {
-    index = (index + 1) % slides.length;
-    carousel.style.transform = `translateX(${-index * width}px)`;
+    modalIndex = (modalIndex + 1) % modalSlides.length;
+    moveModal();
 }, 4000);
 
-// =================================================
-// chaf
-// =================================================
-let chafs = document.querySelectorAll('.le_chafs');  
-let chaf1 = document.querySelector('.chaf1'); 
-let chaf2 = document.querySelector('.chaf2');
-let chaf3 = document.querySelector('.chaf3');
+// =========================================
+// EXTERNAL CAROUSEL
+// =========================================
+let extIndex = 0;
+const extCarousel = document.querySelector('.carousel');
+const extSlides = document.querySelectorAll('.carousel > div');
+const extPrev = document.querySelector('.prev');
+const extNext = document.querySelector('.next');
 
-let icoons = document.querySelector('.icoons'); 
-// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-// const dropBtn = document.getElementById("dropBtn");
-// const dropMenu = document.querySelector(".dropdown-menu");
+function moveExt() {
+    extCarousel.style.transform = `translateX(-${extIndex * 100}%)`;
+}
 
-// dropBtn.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   dropMenu.classList.toggle("show");
-// });
+extNext?.addEventListener('click', () => {
+    extIndex = extIndex >= extSlides.length - 1 ? 0 : extIndex + 1;
+    moveExt();
+});
 
-// document.addEventListener("click", (e) => {
-//   if (!e.target.closest(".dropdown")) {
-//     dropMenu.classList.remove("show");
-//   }
-// });
+extPrev?.addEventListener('click', () => {
+    extIndex = extIndex <= 0 ? extSlides.length - 1 : extIndex - 1;
+    moveExt();
+});
+setInterval(() => {
+    extIndex = (extIndex + 1) % extSlides.length;
+    moveExt();
+}, 5000);
 
-// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+// =========================================
+//  CHAF HOVER 
+// =========================================
+const chaf1 = document.querySelector('.chaf1');
+const chaf2 = document.querySelector('.chaf2');
+const chaf3 = document.querySelector('.chaf3');
 
-chaf1.addEventListener('mouseover', () => {
-    icoons.style.right = "0";
-    icoons.style.display = "block"
-    chaf1.style.right = "50px"
-})
-
-chaf2.addEventListener('mouseover', () => {
-    icoons.style.right = "0";
-    icoons.style.display = "block"
-})
-
-chaf3.addEventListener('mouseover', () => {
-    icoons.style.right = "0";
-    icoons.style.display = "block"
-})
-
-[chaf1, chaf2, chaf3].forEach(chaf => {
+[chaf1, chaf2, chaf3].forEach((chaf, i) => {
+    const chafIcons = chaf.querySelector('.icoons');
+    
+    chaf.addEventListener('mouseover', () => {
+        chafIcons.style.right = '0';
+        chafIcons.style.display = 'flex'; 
+        if (i === 0) {
+            chaf.style.right = '50px'
+        }
+    });
+    
     chaf.addEventListener('mouseout', () => {
-        icoons.style.right = "-100px";  
-        icoons.style.display = "none"
-    })
-})
+        chafIcons.style.right = '-100px';
+        chafIcons.style.display = 'none';
+    });
+});
+// ==========================================================
+// ======================
 
-// watch video
-// lllllllllllllllllllllllllllllllllllllllll
+// Sec_6 Events Carousel (Vanilla JS)
+// Infinite carousel JS للـ sec_6 (4 صور)
+// const track = document.querySelector('.sec_6_track'); // ضيف class sec_6_track
+// const nextBtn = document.querySelector('.next');
+// let mov = false;
 
-// const modal = document.getElementById('videoModal');
-// const closeBtn = document.getElementById('closeModal');
-// const track = document.getElementById('track');
-// const prevBtn = document.getElementById('prevBtn');
-// const nextBtn = document.getElementById('nextBtn');
+// nextBtn.addEventListener('click', () => {
+//     if (mov) return;
+    
+//     mov = true;
+//     track.style.transform = 'translateX(-25%)'; // 4 صور = 25% كل واحدة
+    
+//     track.addEventListener('transitionend', () => {
+//         track.appendChild(track.firstElementChild); // آخر للأول
+//         track.style.transition = 'none';
+//         track.style.transform = 'translateX(0)';
+//         track.offsetHeight; // reflow
+//         track.style.transition = 'transform 0.5s ease';
+//         mov = false;
+//     }, { once: true });
+// });
+
+// // Auto كل 4s
+// setInterval(() => {
+//     if (!mov) nextBtn.click();
+// }, 4000);
 
 
-// let indexx = 0;
+const sec6Slides = document.querySelectorAll('.sec_6_prt1, .sec_6_prt2, .sec_6_prt3, .sec_6_prt4');
+const sec6Container = document.querySelector('.sec_6');
+let sec6Index = 0;
+let mov = false;
+
+function moveSec6() {
+    sec6Container.style.transform = `translateX(-${sec6Index * 10}%)`; 
+}
+
+document.querySelector('.sec_6_next')?.addEventListener('click', () => { 
+    if (mov) return;
+    mov = true;
+    
+    sec6Index++;
+    if (sec6Index >= sec6Slides.length-1) sec6Index = 0;
+    moveSec6();
+    
+    setTimeout(() => mov = false, 500);
+});
+
+setInterval(() => {
+    if (!mov) {
+        sec6Index = (sec6Index + 1) % sec6Slides.length;
+        moveSec6();
+    }
+}, 3500);
 
 
-// function openModal() { 
-//     modal.classList.add('active');
-//  }
-// function closeModal() { modal.classList.remove('active'); }
-// function moveSlide() { 
-//     track.style.transform = `translateX(-${indexx * 100}%)`; 
-// }
-
-// closeBtn.onclick = closeModal;
-// prevBtn.onclick = () => { indexx = indexx <= 0 ? 2 : indexx - 1; moveSlide(); };
-// nextBtn.onclick = () => { indexx = indexx >= 2 ? 0 : indexx + 1; moveSlide(); };
 
 
-// window.onload = openModal;
+
+
+

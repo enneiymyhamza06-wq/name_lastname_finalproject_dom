@@ -1023,6 +1023,55 @@ button svg {
 }
 
 /* sec_6 */
+/*  v*/
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.images {
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+}
+
+#track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide iframe,
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*  v*/
+.sec_6 {
+    display: flex !important;
+    /* overflow: hidden; */
+    height: 600px;
+    transition: transform 0.5s ease;
+    width: 400%;
+}
+
+.sec_6_prt1, .sec_6_prt2, .sec_6_prt3, .sec_6_prt4 {
+    flex: 0 0 25%;
+    height: 100%;
+}
+
+
 /*  */
 .sec_6 {
     display: flex;
@@ -1087,12 +1136,13 @@ button svg {
 }
 .sec_6_lktba{
  color: #fff;
+ padding: 9px;
 }
 .sec_6_lktba p{
    border-bottom: #ce1212 solid 3px;
-   padding-bottom: 15px;
-   width: 40px;
-   height: 30px;
+   /* padding-bottom: 15px; */
+   width: max-content;
+   height: max-content;
    /* background-color: #ccc; */
 
 }
@@ -1144,13 +1194,17 @@ button svg {
 position: absolute;
 width: 100%;
 height: 30%;
-top: 65%;
+top: 53%;
 }
 .sec_6_lktba span{
     width: 0px;
     height: 110px;
     color: #fff;
     font-weight: 900;
+}
+.sec_6_lktba p{
+    font-weight: 900;
+    font-size: 34px;
 }
 /* sec_6 final */
 
