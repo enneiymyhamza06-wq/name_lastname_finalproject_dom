@@ -1,23 +1,41 @@
 // =========================================
-//  MODAL CAROUSEL (#videoModal)
 // =========================================
-const modaal = document.querySelector('#videoModal');
-const closeModal = document.getElementById('closeModal');
-const Watch_Video = document.querySelector('.Watch_Video');
-const button = document.querySelector('.button');
+let modaal = document.querySelector('#videoModal');
+let closeModal = document.getElementById('closeModal');
+let Watch_Video = document.querySelector('.Watch_Video');
+let button = document.querySelector('.button');
+let book_a_table = document.querySelector('.book_a_table')
+let boton = document.querySelector('.book_a_tableeee')
+let boton2 = document.querySelector('.book_a')
+let cansel_botton = document.querySelector('.cansel_botton')
 
+
+book_a_table.style.display = "none"
 modaal.style.display = 'none';
 
 [Watch_Video, button].forEach(btn => {
     btn?.addEventListener('click', (e) => {
         e.preventDefault();
         modaal.style.display = 'block';
-    });
-});
+    })
+})
+boton.addEventListener('click',()=>{
+    book_a_table.style.display = "block"
+})
+cansel_botton.addEventListener('click',()=>{
+    book_a_table.style.display = "none"
+})
+boton2.addEventListener('click',()=>{
+    book_a_table.style.display = "block"
+})
+cansel_botton.addEventListener('click',()=>{
+    book_a_table.style.display = "none"
+})
 
+
+// =============================
 closeModal.addEventListener('click', () => modaal.style.display = 'none');
 
-// Modal carousel
 let modalIndex = 0;
 const modalTrack = document.getElementById('track');
 const modalSlides = document.querySelectorAll('.slide');
@@ -31,22 +49,22 @@ function moveModal() {
 modalNext.addEventListener('click', () => {
     modalIndex = modalIndex >= modalSlides.length - 1 ? 0 : modalIndex + 1;
     moveModal();
-});
+})
 
 modalPrev.addEventListener('click', () => {
     modalIndex = modalIndex <= 0 ? modalSlides.length - 1 : modalIndex - 1;
     moveModal();
-});
+})
 
-// Auto modal
 setInterval(() => {
     modalIndex = (modalIndex + 1) % modalSlides.length;
     moveModal();
-}, 4000);
+}, 4000)
 
 // =========================================
 // EXTERNAL CAROUSEL
 // =========================================
+
 let extIndex = 0;
 const extCarousel = document.querySelector('.carousel');
 const extSlides = document.querySelectorAll('.carousel > div');
@@ -69,7 +87,7 @@ extPrev?.addEventListener('click', () => {
 setInterval(() => {
     extIndex = (extIndex + 1) % extSlides.length;
     moveExt();
-}, 5000);
+}, 5000)
 
 // =========================================
 //  CHAF HOVER 
@@ -92,37 +110,10 @@ const chaf3 = document.querySelector('.chaf3');
     chaf.addEventListener('mouseout', () => {
         chafIcons.style.right = '-100px';
         chafIcons.style.display = 'none';
-    });
-});
+    })
+})
 // ==========================================================
 // ======================
-
-// Sec_6 Events Carousel (Vanilla JS)
-// Infinite carousel JS للـ sec_6 (4 صور)
-// const track = document.querySelector('.sec_6_track'); // ضيف class sec_6_track
-// const nextBtn = document.querySelector('.next');
-// let mov = false;
-
-// nextBtn.addEventListener('click', () => {
-//     if (mov) return;
-    
-//     mov = true;
-//     track.style.transform = 'translateX(-25%)'; // 4 صور = 25% كل واحدة
-    
-//     track.addEventListener('transitionend', () => {
-//         track.appendChild(track.firstElementChild); // آخر للأول
-//         track.style.transition = 'none';
-//         track.style.transform = 'translateX(0)';
-//         track.offsetHeight; // reflow
-//         track.style.transition = 'transform 0.5s ease';
-//         mov = false;
-//     }, { once: true });
-// });
-
-// // Auto كل 4s
-// setInterval(() => {
-//     if (!mov) nextBtn.click();
-// }, 4000);
 
 
 const sec6Slides = document.querySelectorAll('.sec_6_prt1, .sec_6_prt2, .sec_6_prt3, .sec_6_prt4');
