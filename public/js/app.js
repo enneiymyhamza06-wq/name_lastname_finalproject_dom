@@ -37,10 +37,10 @@ cansel_botton.addEventListener('click',()=>{
 closeModal.addEventListener('click', () => modaal.style.display = 'none');
 
 let modalIndex = 0;
-const modalTrack = document.getElementById('track');
-const modalSlides = document.querySelectorAll('.slide');
-const modalPrev = document.getElementById('prevBtn');
-const modalNext = document.getElementById('nextBtn');
+let modalTrack = document.getElementById('track');
+let modalSlides = document.querySelectorAll('.slide');
+let modalPrev = document.getElementById('prevBtn');
+let modalNext = document.getElementById('nextBtn');
 
 function moveModal() {
     modalTrack.style.transform = `translateX(-${modalIndex * 100}%)`;
@@ -62,14 +62,13 @@ setInterval(() => {
 }, 4000)
 
 // =========================================
-// EXTERNAL CAROUSEL
 // =========================================
 
 let extIndex = 0;
-const extCarousel = document.querySelector('.carousel');
-const extSlides = document.querySelectorAll('.carousel > div');
-const extPrev = document.querySelector('.prev');
-const extNext = document.querySelector('.next');
+let extCarousel = document.querySelector('.carousel');
+let extSlides = document.querySelectorAll('.carousel > div');
+let extPrev = document.querySelector('.prev');
+let extNext = document.querySelector('.next');
 
 function moveExt() {
     extCarousel.style.transform = `translateX(-${extIndex * 100}%)`;
@@ -90,14 +89,13 @@ setInterval(() => {
 }, 5000)
 
 // =========================================
-//  CHAF HOVER 
 // =========================================
-const chaf1 = document.querySelector('.chaf1');
-const chaf2 = document.querySelector('.chaf2');
-const chaf3 = document.querySelector('.chaf3');
+let chaf1 = document.querySelector('.chaf1');
+let chaf2 = document.querySelector('.chaf2');
+let chaf3 = document.querySelector('.chaf3');
 
 [chaf1, chaf2, chaf3].forEach((chaf, i) => {
-    const chafIcons = chaf.querySelector('.icoons');
+    let chafIcons = chaf.querySelector('.icoons');
     
     chaf.addEventListener('mouseover', () => {
         chafIcons.style.right = '0';
@@ -116,8 +114,8 @@ const chaf3 = document.querySelector('.chaf3');
 // ======================
 
 
-const sec6Slides = document.querySelectorAll('.sec_6_prt1, .sec_6_prt2, .sec_6_prt3, .sec_6_prt4');
-const sec6Container = document.querySelector('.sec_6');
+let sec6Slides = document.querySelectorAll('.sec_6_prt1, .sec_6_prt2, .sec_6_prt3, .sec_6_prt4');
+let sec6Container = document.querySelector('.sec_6');
 let sec6Index = 0;
 let mov = false;
 
@@ -144,8 +142,10 @@ setInterval(() => {
 }, 3500);
 
 
+// ===================================================
 
 
-
-
-
+img_lwla.addEventListener('click', (e) => {  // ← e مضاف
+    e.preventDefault();
+    img_lwla.innerHTML = '<h1>Starters</h1>'; 
+})
