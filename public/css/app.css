@@ -1013,6 +1013,40 @@ button svg {
     flex-shrink: 0;
     width: 100%;
 }
+/* sec_6 */
+.sec_6{
+   display: flex;
+   width: 100%;
+   height: 600px;
+}
+.sec_6_prt1{
+    background-color: #222;
+    width: 33%;
+    height: 100%;
+
+}
+.sec_6_prt2{
+    background-color:red;
+    width: 33%;
+    height: 100%;
+    
+}
+.sec_6_prt3{
+    background-color:blue;
+    width: 33%;
+    height: 100%;
+}
+.sec_6_prt4{
+    background-color:blue;
+    width: 33%;
+    height: 100%;
+}
+.sec_6_prt5{
+    background-color:violet;
+    width: 33%;
+    height: 100%;
+}
+/* sec_6 final */
 
 /* chefs */
 
