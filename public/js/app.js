@@ -5,7 +5,32 @@ let carosil4 = document.querySelector('.dd');
 let prev = document.querySelector('.prev'); 
 let next = document.querySelector('.next');
 let carousel = document.querySelector('.carousel'); 
+let Watch_Video = document.querySelector('.Watch_Video')
+let modaal  = document.querySelector('#videoModal')
+let closeModal = document.querySelector('#closeModal')
+let button = document.querySelector('.button')
+// [[[[[[[[[[[[]]]]]]]]]]]]
 
+modaal.style.display = "none"
+Watch_Video.addEventListener('click',(e)=>{
+     e.preventDefault()
+    modaal.style.display = "block"
+})
+closeModal.addEventListener('click',()=> {
+    modaal.style.display = "none"
+})
+// xxxxxxxxxxxxxxxxx
+button.addEventListener('click',(e)=>{
+     e.preventDefault()
+    modaal.style.display = "block"
+})
+closeModal.addEventListener('click',()=> {
+    modaal.style.display = "none"
+})
+
+
+
+// [[[[[[[[[[[[]]]]]]]]]]]]
 let index = 0;
 let slides = document.querySelectorAll('.carousel > div'); 
 let width = slides[0].clientWidth ; 
@@ -75,3 +100,31 @@ chaf3.addEventListener('mouseover', () => {
         icoons.style.display = "none"
     })
 })
+
+// watch video
+// lllllllllllllllllllllllllllllllllllllllll
+
+// const modal = document.getElementById('videoModal');
+// const closeBtn = document.getElementById('closeModal');
+// const track = document.getElementById('track');
+// const prevBtn = document.getElementById('prevBtn');
+// const nextBtn = document.getElementById('nextBtn');
+
+
+// let indexx = 0;
+
+
+// function openModal() { 
+//     modal.classList.add('active');
+//  }
+// function closeModal() { modal.classList.remove('active'); }
+// function moveSlide() { 
+//     track.style.transform = `translateX(-${indexx * 100}%)`; 
+// }
+
+// closeBtn.onclick = closeModal;
+// prevBtn.onclick = () => { indexx = indexx <= 0 ? 2 : indexx - 1; moveSlide(); };
+// nextBtn.onclick = () => { indexx = indexx >= 2 ? 0 : indexx + 1; moveSlide(); };
+
+
+// window.onload = openModal;
