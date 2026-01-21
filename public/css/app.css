@@ -1958,6 +1958,7 @@ footer
     background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(5px);
     cursor: pointer;
+    z-index: 99999999999999999999999999999999;
 }
 
 .modal-content {
@@ -2045,4 +2046,42 @@ footer
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+}
+/*  */
+/*  */
+
+.boock-table {
+  max-width: 380px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+.boock-table input,
+.boock-table select {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  border: 2px solid #cacacd;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #fafbfc;
+}
+#Drop {
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 16px;
+  padding-right: 45px;
+}
+#boocking {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
