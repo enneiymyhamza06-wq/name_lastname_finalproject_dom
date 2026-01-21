@@ -140,12 +140,3 @@ setInterval(() => {
         moveSec6();
     }
 }, 3500);
-
-
-// ===================================================
-
-
-img_lwla.addEventListener('click', (e) => {  // ← e مضاف
-    e.preventDefault();
-    img_lwla.innerHTML = '<h1>Starters</h1>'; 
-})
