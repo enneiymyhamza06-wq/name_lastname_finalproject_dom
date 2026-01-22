@@ -49,7 +49,8 @@ function moveModal() {
 modalPrev.addEventListener('click', () => {
     if (modalIndex <= 0) {
         modalIndex = modalSlides.length - 1;
-    } else {
+    }
+    else {
         modalIndex = modalIndex - 1;
     }
     moveModal();
@@ -58,7 +59,8 @@ modalPrev.addEventListener('click', () => {
 setInterval(() => {
     if (modalIndex >= modalSlides.length - 1) {
         modalIndex = 0;
-    } else {
+    }
+    else {
         modalIndex = modalIndex + 1;
     }
     moveModal();
@@ -67,7 +69,8 @@ setInterval(() => {
 setInterval(() => {
     if (modalIndex >= modalSlides.length - 1) {
         modalIndex = 0;
-    } else {
+    } 
+    else {
         modalIndex = modalIndex + 1;
     }
     moveModal();
@@ -91,7 +94,8 @@ if (extNext) {
     extNext.addEventListener('click', () => {
         if (extIndex >= extSlides.length - 1) {
             extIndex = 0;
-        } else {
+        }
+         else {
             extIndex = extIndex + 1;
         }
         moveExt();
@@ -102,7 +106,8 @@ if (extPrev) {
     extPrev.addEventListener('click', () => {
         if (extIndex <= 0) {
             extIndex = extSlides.length - 1;
-        } else {
+        }
+         else {
             extIndex = extIndex - 1;
         }
         moveExt();
@@ -111,7 +116,8 @@ if (extPrev) {
 setInterval(() => {
     if (extIndex >= extSlides.length - 1) {
         extIndex = 0;
-    } else {
+    }
+     else {
         extIndex = extIndex + 1;
     }
     moveExt();
