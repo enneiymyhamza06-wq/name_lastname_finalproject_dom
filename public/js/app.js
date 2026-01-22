@@ -19,16 +19,16 @@ modaal.style.display = 'none';
         modaal.style.display = 'block';
     })
 })
-boton.addEventListener('click',()=>{
+boton.addEventListener('click', () => {
     book_a_table.style.display = "block"
 })
-cansel_botton.addEventListener('click',()=>{
+cansel_botton.addEventListener('click', () => {
     book_a_table.style.display = "none"
 })
-boton2.addEventListener('click',()=>{
+boton2.addEventListener('click', () => {
     book_a_table.style.display = "block"
 })
-cansel_botton.addEventListener('click',()=>{
+cansel_botton.addEventListener('click', () => {
     book_a_table.style.display = "none"
 })
 
@@ -46,20 +46,33 @@ function moveModal() {
     modalTrack.style.transform = `translateX(-${modalIndex * 100}%)`;
 }
 
-modalNext.addEventListener('click', () => {
-    modalIndex = modalIndex >= modalSlides.length - 1 ? 0 : modalIndex + 1;
-    moveModal();
-})
-
 modalPrev.addEventListener('click', () => {
-    modalIndex = modalIndex <= 0 ? modalSlides.length - 1 : modalIndex - 1;
+    if (modalIndex <= 0) {
+        modalIndex = modalSlides.length - 1;
+    } else {
+        modalIndex = modalIndex - 1;
+    }
     moveModal();
-})
+});
 
 setInterval(() => {
-    modalIndex = (modalIndex + 1) % modalSlides.length;
+    if (modalIndex >= modalSlides.length - 1) {
+        modalIndex = 0;
+    } else {
+        modalIndex = modalIndex + 1;
+    }
     moveModal();
-}, 4000)
+}, 4000);
+
+setInterval(() => {
+    if (modalIndex >= modalSlides.length - 1) {
+        modalIndex = 0;
+    } else {
+        modalIndex = modalIndex + 1;
+    }
+    moveModal();
+}, 4000);
+
 
 // =========================================
 // =========================================
@@ -74,19 +87,35 @@ function moveExt() {
     extCarousel.style.transform = `translateX(-${extIndex * 100}%)`;
 }
 
-extNext?.addEventListener('click', () => {
-    extIndex = extIndex >= extSlides.length - 1 ? 0 : extIndex + 1;
-    moveExt();
-});
+if (extNext) {
+    extNext.addEventListener('click', () => {
+        if (extIndex >= extSlides.length - 1) {
+            extIndex = 0;
+        } else {
+            extIndex = extIndex + 1;
+        }
+        moveExt();
+    });
+}
 
-extPrev?.addEventListener('click', () => {
-    extIndex = extIndex <= 0 ? extSlides.length - 1 : extIndex - 1;
-    moveExt();
-});
+if (extPrev) {
+    extPrev.addEventListener('click', () => {
+        if (extIndex <= 0) {
+            extIndex = extSlides.length - 1;
+        } else {
+            extIndex = extIndex - 1;
+        }
+        moveExt();
+    });
+}
 setInterval(() => {
-    extIndex = (extIndex + 1) % extSlides.length;
+    if (extIndex >= extSlides.length - 1) {
+        extIndex = 0;
+    } else {
+        extIndex = extIndex + 1;
+    }
     moveExt();
-}, 5000)
+}, 5000);
 
 // =========================================
 // =========================================
@@ -96,15 +125,15 @@ let chaf3 = document.querySelector('.chaf3');
 
 [chaf1, chaf2, chaf3].forEach((chaf, i) => {
     let chafIcons = chaf.querySelector('.icoons');
-    
+
     chaf.addEventListener('mouseover', () => {
         chafIcons.style.right = '0';
-        chafIcons.style.display = 'flex'; 
+        chafIcons.style.display = 'flex';
         if (i === 0) {
             chaf.style.right = '50px'
         }
     });
-    
+
     chaf.addEventListener('mouseout', () => {
         chafIcons.style.right = '-100px';
         chafIcons.style.display = 'none';
@@ -114,23 +143,25 @@ let chaf3 = document.querySelector('.chaf3');
 // ======================
 
 
-let sec6Slides = document.querySelectorAll('.sec_6_prt1, .sec_6_prt2, .sec_6_prt3, .sec_6_prt4');
+let sec6Slides = document.querySelectorAll('.sec_6_prt1,.sec_6_prt2,.sec_6_prt3,.sec_6_prt4');
 let sec6Container = document.querySelector('.sec_6');
 let sec6Index = 0;
 let mov = false;
 
 function moveSec6() {
-    sec6Container.style.transform = `translateX(-${sec6Index * 10}%)`; 
+    sec6Container.style.transform = `translateX(-${sec6Index * 10}%)`;
 }
 
-document.querySelector('.sec_6_next')?.addEventListener('click', () => { 
-    if (mov) return;
+document.querySelector('.sec_6_next')?.addEventListener('click', () => {
+    if (mov)
+        return;
     mov = true;
-    
+
     sec6Index++;
-    if (sec6Index >= sec6Slides.length-1) sec6Index = 0;
+    if (sec6Index >= sec6Slides.length - 1)
+        sec6Index = 0;
     moveSec6();
-    
+
     setTimeout(() => mov = false, 500);
 });
 
@@ -139,4 +170,4 @@ setInterval(() => {
         sec6Index = (sec6Index + 1) % sec6Slides.length;
         moveSec6();
     }
-}, 3500);
+}, 3500)
